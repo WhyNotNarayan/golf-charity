@@ -1,5 +1,5 @@
 import { NextResponse } from 'next/server'
-import { stripe } from '@/lib/stripe'
+import { getStripe } from '@/lib/stripe'
 import { createClient } from '@/lib/supabase/server'
 
 export const dynamic = 'force-dynamic'
@@ -18,7 +18,7 @@ export async function POST(req: Request) {
 
     // Create a Stripe Checkout Session with inline product data
     // This removes the need for you to manually create a product in Stripe Dashboard!
-    const session = await stripe.checkout.sessions.create({
+    const session = await getStripe().checkout.sessions.create({
       payment_method_types: ['card'],
       billing_address_collection: 'required',
       customer_email: user.email,
