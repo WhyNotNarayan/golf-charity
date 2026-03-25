@@ -15,17 +15,17 @@ export default function Home() {
         </div>
 
         {/* Navigation */}
-        <nav className="relative z-20 flex items-center justify-between p-6 md:px-12 lg:px-24">
-          <div className="text-2xl font-black tracking-tighter flex items-center gap-2">
-            <div className="w-8 h-8 rounded-full bg-gradient-to-tr from-rose-500 to-orange-400 shadow-lg shadow-rose-500/30"></div>
+        <nav className="relative z-20 flex items-center justify-between p-4 sm:p-6 md:px-12 lg:px-24">
+          <div className="text-xl sm:text-2xl font-black tracking-tighter flex items-center gap-2">
+            <div className="w-6 h-6 sm:w-8 sm:h-8 rounded-full bg-gradient-to-tr from-rose-500 to-orange-400 shadow-lg shadow-rose-500/30"></div>
             ImpactDraw
           </div>
-          <div className="flex gap-4 items-center">
-            <Link href="/login" className="px-5 py-2.5 text-sm font-bold hover:text-rose-400 transition-colors uppercase tracking-widest">
+          <div className="flex gap-2 sm:gap-4 items-center">
+            <Link href="/login" className="px-3 py-2 sm:px-5 sm:py-2.5 text-[10px] sm:text-sm font-bold hover:text-rose-400 transition-colors uppercase tracking-widest">
               Sign In
             </Link>
-            <Link href="/signup" className="px-6 py-3 text-sm font-black bg-white text-slate-950 rounded-full hover:bg-slate-200 transition-all hover:scale-105 shadow-xl">
-              JOIN THE CAUSE
+            <Link href="/signup" className="px-4 py-2 sm:px-6 sm:py-3 text-[10px] sm:text-sm font-black bg-white text-slate-950 rounded-full hover:bg-slate-200 transition-all hover:scale-105 shadow-xl">
+              JOIN
             </Link>
           </div>
         </nav>
@@ -37,17 +37,17 @@ export default function Home() {
             A Global Community of Golfers Giving Back
           </div>
           
-          <h1 className="max-w-5xl text-6xl md:text-8xl lg:text-9xl font-black tracking-tight leading-[0.95] mb-10 drop-shadow-2xl">
+          <h1 className="max-w-5xl text-5xl sm:text-7xl md:text-8xl lg:text-9xl font-black tracking-tight leading-[0.95] mb-10 drop-shadow-2xl px-2">
             Your <span className="text-transparent bg-clip-text bg-gradient-to-r from-rose-400 to-orange-400">Swing,</span><br />
             Their <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-teal-400 italic">Hope.</span>
           </h1>
           
-          <p className="max-w-2xl text-xl md:text-2xl text-slate-300 font-medium mb-14 leading-relaxed opacity-90">
+          <p className="max-w-2xl text-lg sm:text-xl md:text-2xl text-slate-300 font-medium mb-14 leading-relaxed opacity-90">
             For just $10/mo, enter monthly prize draws while funding life-saving medical care and clean water initiatives globally.
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-6 w-full justify-center max-w-lg">
-            <Link href="/signup" className="group relative flex items-center justify-center gap-3 px-10 py-5 bg-gradient-to-r from-rose-500 to-orange-500 rounded-full text-white font-black text-xl overflow-hidden transition-all hover:scale-105 hover:shadow-[0_0_50px_rgba(244,63,94,0.4)] active:scale-95">
+          <div className="flex flex-col sm:flex-row gap-4 w-full justify-center max-w-lg">
+            <Link href="/signup" className="group relative flex items-center justify-center gap-3 px-8 py-4 sm:px-10 sm:py-5 bg-gradient-to-r from-rose-500 to-orange-500 rounded-full text-white font-black text-lg sm:text-xl overflow-hidden transition-all hover:scale-105 hover:shadow-[0_0_50px_rgba(244,63,94,0.4)] active:scale-95">
               Start Your Journey
             </Link>
           </div>
@@ -55,44 +55,44 @@ export default function Home() {
       </section>
 
       {/* Impact Story Section */}
-      <section className="py-32 px-6 bg-slate-950 relative overflow-hidden">
-        <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
-          <div className="space-y-12">
-            <div className="inline-block px-4 py-2 bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 rounded-xl font-black text-xs uppercase tracking-widest">Real Stories, Real Impact</div>
-            <h2 className="text-4xl md:text-6xl font-black tracking-tight leading-tight">
+      <section className="py-20 sm:py-32 px-4 sm:px-6 bg-slate-950 relative overflow-hidden">
+        <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+          <div className="space-y-8 sm:space-y-12">
+            <div className="inline-block px-4 py-2 bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 rounded-xl font-black text-[10px] sm:text-xs uppercase tracking-widest">Real Stories, Real Impact</div>
+            <h2 className="text-3xl sm:text-4xl md:text-6xl font-black tracking-tight leading-tight">
               Golf is just the <span className="text-emerald-400">beginning.</span>
             </h2>
-            <p className="text-xl text-slate-400 leading-relaxed font-medium">
+            <p className="text-lg sm:text-xl text-slate-400 leading-relaxed font-medium">
               We believe the game of golf has the power to change the world. Every score you log, every monthly draw you enter, contributes directly to foundations that provide pediatric care and clean water to communities in need.
             </p>
             
-            <div className="grid grid-cols-2 gap-8 pt-8">
+            <div className="grid grid-cols-2 gap-6 sm:gap-8 pt-8">
               <div>
-                <p className="text-5xl font-black text-white mb-2">$150k+</p>
-                <p className="text-slate-500 font-bold uppercase tracking-widest text-xs">Total Raised Yearly</p>
+                <p className="text-3xl sm:text-5xl font-black text-white mb-2">$150k+</p>
+                <p className="text-slate-500 font-bold uppercase tracking-widest text-[10px] sm:text-xs">Total Raised Yearly</p>
               </div>
               <div>
-                <p className="text-5xl font-black text-white mb-2">12,400</p>
-                <p className="text-slate-500 font-bold uppercase tracking-widest text-xs">Lives Transformed</p>
+                <p className="text-3xl sm:text-5xl font-black text-white mb-2">12,400</p>
+                <p className="text-slate-500 font-bold uppercase tracking-widest text-[10px] sm:text-xs">Lives Transformed</p>
               </div>
             </div>
           </div>
 
-          <div className="grid grid-cols-2 gap-4 relative">
-             <div className="space-y-4 pt-12">
-                <div className="rounded-[2.5rem] overflow-hidden border-2 border-slate-800 shadow-2xl transition-transform hover:-translate-y-2 duration-500">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 relative">
+             <div className="space-y-4 pt-0 lg:pt-12">
+                <div className="rounded-[2rem] sm:rounded-[2.5rem] overflow-hidden border-2 border-slate-800 shadow-2xl transition-transform hover:-translate-y-2 duration-500">
                    <img src="/images/impact-medical.png" alt="Medical Impact" className="w-full grayscale hover:grayscale-0 transition-all duration-700" />
                 </div>
-                <div className="bg-slate-900 p-8 rounded-[2.5rem] border border-slate-800">
-                   <p className="text-sm font-bold text-slate-400 italic">"Because of ImpactDraw, we can fund 100+ surgeries this month alone."</p>
+                <div className="bg-slate-900 p-6 sm:p-8 rounded-[2rem] sm:rounded-[2.5rem] border border-slate-800">
+                   <p className="text-xs sm:text-sm font-bold text-slate-400 italic">"Because of ImpactDraw, we can fund 100+ surgeries this month alone."</p>
                 </div>
              </div>
              <div className="space-y-4">
-                <div className="bg-emerald-500 p-8 rounded-[3rem] text-emerald-950 font-black flex flex-col justify-between aspect-square">
-                   <span className="text-4xl text-emerald-900/50 italic opacity-40 font-black font-sans tracking-tighter">Impact</span>
-                   <p className="text-lg leading-tight">Your $10 subscription provides clean water for a village family of 4 - for an entire year.</p>
+                <div className="bg-emerald-500 p-6 sm:p-8 rounded-[2rem] sm:rounded-[3rem] text-emerald-950 font-black flex flex-col justify-between aspect-square">
+                   <span className="text-2xl sm:text-4xl text-emerald-900/50 italic opacity-40 font-black font-sans tracking-tighter">Impact</span>
+                   <p className="text-base sm:text-lg leading-tight">Your $10 subscription provides clean water for a village family of 4 - for an entire year.</p>
                 </div>
-                <div className="rounded-[2.5rem] overflow-hidden border-2 border-slate-800 shadow-2xl transition-transform hover:-translate-y-2 duration-500">
+                <div className="rounded-[2rem] sm:rounded-[2.5rem] overflow-hidden border-2 border-slate-800 shadow-2xl transition-transform hover:-translate-y-2 duration-500">
                    <img src="/images/impact-water.png" alt="Water Project" className="w-full grayscale hover:grayscale-0 transition-all duration-700" />
                 </div>
              </div>
